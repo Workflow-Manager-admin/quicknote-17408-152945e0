@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import forms from "@tailwindcss/forms";
 
 export default {
   content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
@@ -16,7 +17,12 @@ export default {
           "Noto Color Emoji",
         ],
       },
+      colors: {
+        primary: "#1976D2",
+        secondary: "#FFFFFF",
+        accent: "#FFC107",
+      },
     },
   },
-  plugins: [],
+  plugins: [forms],
 } satisfies Config;
